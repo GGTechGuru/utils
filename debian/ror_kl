@@ -1,4 +1,5 @@
-# Kill all Rails Server process
+# Author: Gerard Gold
+# Stop all Rails Server processes
 #!/bin/bash
 
 ps aux | egrep -i 'rails[^a-zA-Z]*server' | awk '{print $2}' | xargs kill
