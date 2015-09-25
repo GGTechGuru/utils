@@ -1,0 +1,5 @@
+# Kill all Rails Server process
+#!/bin/bash
+
+ps aux | egrep -i 'rails[^a-zA-Z]*server' | awk '{print $2}' | xargs kill
+
